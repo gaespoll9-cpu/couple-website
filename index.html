@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indra & Safira - Cerita Kita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <header>
+    <h1>💖 Cerita Kita 💖</h1>
+    <h2>Indra & Safira</h2>
+    <p class="tagline">"Hadiah terindah adalah bertemu denganmu, menulis kisah sederhana yang kelak jadi abadi."</p>
+  </header>
+
+  <main>
+    <section class="diary">
+      <h3>📔 Diary Kita</h3>
+      <textarea id="diaryInput" placeholder="Tulis cerita hari ini..."></textarea>
+      <button onclick="saveDiary()">Simpan</button>
+      <div id="savedDiary"></div>
+    </section>
+
+    <section class="gallery">
+      <h3>📸 Galeri Kenangan</h3>
+      <input type="file" id="fileInput" accept="image/*,video/*" multiple>
+      <div id="preview"></div>
+    </section>
+
+    <section class="anniversary">
+      <h3>⏳ Hitung Mundur Kenangan</h3>
+      <p>Kami pertama kali kenal: <b>14 April 2024</b></p>
+      <p>Hari bersama: <span id="daysTogether"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>💞 Indra & Safira - Cerita Kita 💞</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
